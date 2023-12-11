@@ -1,12 +1,11 @@
-import { type AppType } from "next/app";
-
-import { api } from "@/utils/api";
-
-import "@/styles/globals.css";
-import reportAccessibility from "@/utils/reportAccessibility";
 import React from "react";
 
+import { type AppType } from "next/app";
 import { Inter } from "next/font/google";
+
+import "@/styles/globals.css";
+import { api } from "@/utils/api";
+import reportAccessibility from "@/utils/reportAccessibility";
 
 const interFont = Inter({
   display: "swap",
@@ -16,9 +15,9 @@ const interFont = Inter({
 
 const App: AppType = ({ Component, pageProps }) => {
   return (
-    <main className={`${interFont.className}`}>
+    <div role="main" className={`${interFont.className}`}>
       <Component {...pageProps} />
-    </main>
+    </div>
   );
 };
 

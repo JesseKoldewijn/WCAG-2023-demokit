@@ -26,7 +26,7 @@ export default function Home() {
           id="content"
           className="flex flex-col gap-2 rounded-md border-2 px-3 py-2 shadow-xl"
         >
-          <h1 className="text-lg font-semibold">WACG - demo project</h1>
+          <h1 className="text-lg font-semibold">WCAG - demo project</h1>
           <section className="flex flex-col items-center justify-center">
             <h2>Safe Items</h2>
             <div className="flex flex-col gap-2 py-1">
